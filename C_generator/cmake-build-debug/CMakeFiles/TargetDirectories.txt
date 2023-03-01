@@ -1,0 +1,3 @@
+/home/maciej/Documents/Projects/Tutorials_and_Tests/CORDIC/C/cmake-build-debug/CMakeFiles/C.dir
+/home/maciej/Documents/Projects/Tutorials_and_Tests/CORDIC/C/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/maciej/Documents/Projects/Tutorials_and_Tests/CORDIC/C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
