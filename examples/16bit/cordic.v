@@ -1,5 +1,5 @@
 module cordic(
-    input signed [WD_EXT+1:0] i_angle, // in radians
+    input signed [WD_EXT+1:0] i_angle,
     input i_clk,
     input i_rst,
     input i_start,
@@ -10,17 +10,10 @@ module cordic(
 
 `include "cordic_params.v"
 
-/* // TODO
-    input/output format 
-        1 integer bit - N fraction bits
-*/
-
 reg signed [WD_INT+1:0] x;
 reg signed [WD_INT+1:0] y; 
 reg signed [WD_INT+1:0] z; 
 reg signed [WD_INT+1:0] angle;
-// reg signed [N+1:0] sin;
-// reg signed [N+1:0] cos;
 reg done = 1'b0;
 
 
@@ -28,7 +21,7 @@ assign o_done = done;
 assign o_sin = y[(WD_INT):(WD_INT-WD_EXT)];
 assign o_cos = x[(WD_INT):(WD_INT-WD_EXT)];
 
-reg [7:0] i = 0;    // GENERATED
+reg [7:0] i = 0;
 
 reg [7:0] state = 8'b0;
 localparam 
